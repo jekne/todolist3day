@@ -41,7 +41,7 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete("todoLists");
+    await queryInterface.bulkDelete("todoLists", null, {});
     /**
      * Add commands to revert seed here.
      *
